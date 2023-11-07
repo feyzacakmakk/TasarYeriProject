@@ -1,0 +1,449 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TasarYeriProject.PresantationLayer
+build_property.RootNamespace = TasarYeriProject.PresantationLayer
+build_property.ProjectDir = C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.PresantationLayer\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.PresantationLayer
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/AdminRol/AddRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xcQWRkUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/AdminRol/AssignRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xcQXNzaWduUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/AdminRol/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/AdminRol/UpdateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xcVXBkYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/AdminRol/UserRoleList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xcVXNlclJvbGVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Category/AdminAddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQWRtaW5BZGRDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Category/AdminEditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQWRtaW5FZGl0Q2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Category/CategoryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Comment/AdminCommentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29tbWVudFxBZG1pbkNvbW1lbnRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Home/ProfileDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxQcm9maWxlRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Message/AdminInbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxBZG1pbkluYm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Message/AdminMessageDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxBZG1pbk1lc3NhZ2VEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Message/AdminReplyMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxBZG1pblJlcGx5TWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Message/AdminSendbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxBZG1pblNlbmRib3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Message/AdminSendMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxBZG1pblNlbmRNZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Message/AdminSendMessageId.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxBZG1pblNlbmRNZXNzYWdlSWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Notification/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTm90aWZpY2F0aW9uXE5vdGlmaWNhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Product/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Product/EditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxFZGl0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Product/ProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Product/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Shared/Components/Chart/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2hhcnRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Shared/Components/GetUserNameToNavbar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0VXNlck5hbWVUb05hdmJhclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Shared/Components/HeaderMessages/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVyTWVzc2FnZXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Shared/Components/HeaderNotifications/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVyTm90aWZpY2F0aW9uc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/Shared/Components/UserInRole/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlckluUm9sZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/User/UserDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxVc2VyRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Category/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Category/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Comment/AddComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxBZGRDb21tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Comment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/ConfirmMail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlybU1haWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Error/ConfirmMailError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcQ29uZmlybU1haWxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Error/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3I0MDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Error/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Error/StatusError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcU3RhdHVzRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Message/Inbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxJbmJveC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Message/MemberInbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZW1iZXJJbmJveC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Message/MemberMessageDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZW1iZXJNZXNzYWdlRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Message/MemberReplyMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZW1iZXJSZXBseU1lc3NhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Message/MemberSendBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZW1iZXJTZW5kQm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Message/MemberSendMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZW1iZXJTZW5kTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Message/MessageDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZXNzYWdlRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Message/ReplyMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxSZXBseU1lc3NhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Message/SendBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxTZW5kQm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Message/SendMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxTZW5kTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/MyAccount/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XEVkaXRQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/MyAccount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/MyAccount/OrderInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XE9yZGVySW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/MyAccount/Partials/_AccountCategoriesPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XFBhcnRpYWxzXF9BY2NvdW50Q2F0ZWdvcmllc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Notification/AllNotification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXEFsbE5vdGlmaWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Product/Favorites.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxGYXZvcml0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Product/ProductByCategoryId.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0QnlDYXRlZ29yeUlkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Product/ProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Product/SellerDashboardAddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTZWxsZXJEYXNoYm9hcmRBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Product/SellerDashboardEditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTZWxsZXJEYXNoYm9hcmRFZGl0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Product/SellerDashboardProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTZWxsZXJEYXNoYm9hcmRQcm9kdWN0RGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Product/SellerDashboardProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTZWxsZXJEYXNoYm9hcmRQcm9kdWN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Register/SellerRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcU2VsbGVyUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/SellerDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/SellerDashboard/ProfileDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyRGFzaGJvYXJkXFByb2ZpbGVEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/AdminPartials/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluUGFydGlhbHNcX0Zvb3RlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/AdminPartials/_HeaderNavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluUGFydGlhbHNcX0hlYWRlck5hdmJhclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/AdminPartials/_HeadPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluUGFydGlhbHNcX0hlYWRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/AdminPartials/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluUGFydGlhbHNcX05hdmJhclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/AdminPartials/_ScriptPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluUGFydGlhbHNcX1NjcmlwdFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/CategoryList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlMaXN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/CommentListDashboard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudExpc3REYXNoYm9hcmRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/CommentListProductDetail/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudExpc3RQcm9kdWN0RGV0YWlsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/CommentList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudExpc3RcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/DashboardChart/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFzaGJvYXJkQ2hhcnRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/DashboardMessages/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFzaGJvYXJkTWVzc2FnZXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/DashboardNotifications/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFzaGJvYXJkTm90aWZpY2F0aW9uc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/GetAccountName/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0QWNjb3VudE5hbWVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/GetUserToNavbar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0VXNlclRvTmF2YmFyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/NotificationList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTm90aWZpY2F0aW9uTGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/OtherProducts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcT3RoZXJQcm9kdWN0c1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/RecentlyAddedProducts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVjZW50bHlBZGRlZFByb2R1Y3RzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/UserProductsInformation/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlclByb2R1Y3RzSW5mb3JtYXRpb25cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/UserProductsList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlclByb2R1Y3RzTGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Components/ValuesTables/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVmFsdWVzVGFibGVzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Partials/_BannerPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXF9CYW5uZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Partials/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Partials/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXF9IZWFkZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/Partials/_HeadPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXF9IZWFkUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/SellerDashboardPartials/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNlbGxlckRhc2hib2FyZFBhcnRpYWxzXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/SellerDashboardPartials/_HeaderNavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNlbGxlckRhc2hib2FyZFBhcnRpYWxzXF9IZWFkZXJOYXZiYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/SellerDashboardPartials/_HeadPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNlbGxlckRhc2hib2FyZFBhcnRpYWxzXF9IZWFkUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/SellerDashboardPartials/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNlbGxlckRhc2hib2FyZFBhcnRpYWxzXF9OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/SellerDashboardPartials/_ScriptPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNlbGxlckRhc2hib2FyZFBhcnRpYWxzXF9TY3JpcHRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/_SellerDashboardLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWxsZXJEYXNoYm9hcmRMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Feyza/Desktop/C\# .NET CORE/TASAR YERI/TasarYeriProject/TasarYeriProject.PresantationLayer/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gbwho2pczm
