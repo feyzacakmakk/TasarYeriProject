@@ -1,0 +1,45 @@
+﻿@model List<Comment>
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+<body>
+    <div class="col-sm-12 m-b-xs mb-5 ">
+        @if (@ViewBag.Count == 0)
+        {
+            <h1>BU ÜRÜNE HENÜZ YORUM YAPILMADI.</h1>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+
+                            <th>Yorumu Yapan </th>
+                            <th>Yorum </th>
+                            <th>Tarih</th>
+                            <th>Sil</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+                                <td>@item.AppUser.Name @item.AppUser.Surname </td>
+                                <td>@item.CommentContent</td>
+                                <td>@(((DateTime)item.CommentDate).ToString("dd-MMM-yyyy HH:mm"))</td>
+                                <td><a href="/Comment/SellerDeleteComment/@item.CommentId/@item.ProductId/" class="btn btn-sm btn-danger btn-outline">Sil</a></td>
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        }
+
+    </div>
+</body>
+</html>

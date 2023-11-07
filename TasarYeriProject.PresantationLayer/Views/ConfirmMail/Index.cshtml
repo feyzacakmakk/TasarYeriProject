@@ -1,0 +1,117 @@
+﻿@model ConfirmMailViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TASAR YERİ | EMAİL DOĞRULAMA</title>
+    <meta charset="UTF-8">
+    <meta name="description" content=" Divisima | eCommerce Template">
+    <meta name="keywords" content="divisima, eCommerce, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="/tasaryericom/img/logo/logosvg.png" rel="shortcut icon" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="~/tasaryericom/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/tasaryericom/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/tasaryericom/css/flaticon.css" />
+    <link rel="stylesheet" href="~/tasaryericom/css/slicknav.min.css" />
+    <link rel="stylesheet" href="~/tasaryericom/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="~/tasaryericom/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="~/tasaryericom/css/animate.css" />
+    <link rel="stylesheet" href="~/tasaryericom/css/style.css" />
+    <link rel="stylesheet" href="/tasaryericom/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="/tasaryericom/css/logincss/style.css" />
+
+
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="d-lg-flex half">
+
+        <div class="">
+
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-9">
+                        <h3 style="text-align: center; margin-bottom: 40px;">EMAİL DOĞRULAMA SAYFASI</h3>
+
+                        <form action="#" method="post" id="myForm">
+                            <div class="form-group first">
+                                <label for="username">Mail adresiniz</label>
+                                <input type="text" asp-for="Mail" value="@ViewBag.value" class="form-control" id="email">
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="password">Doğrulama Kodunuz</label>
+                                <input type="text" class="form-control" asp-for="ConfirmCode" id="code" placeholder="Doğrulama kodunu giriniz">
+                            </div>
+
+
+                            <p style="color: black;" class="mb-3"> <a href="#" >Tekrar kod gönder</a></p>
+                           
+                            <button id="submitbtn" class="btn btn-block">Hesabı aktifleştir</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="/tasaryericom/js/jquery-3.2.1.min.js"></script>
+    <script src="/tasaryericom/js/popper.min.js"></script>
+    <script src="/tasaryericom/js/bootstrap.min.js"></script>
+    <script src="/tasaryericom/js/jquery.slicknav.min.js"></script>
+    <script src="/tasaryericom/js/owl.carousel.min.js"></script>
+    <script src="/tasaryericom/js/jquery.nicescroll.min.js"></script>
+    <script src="/tasaryericom/js/jquery.zoom.min.js"></script>
+    <script src="/tasaryericom/js/jquery-ui.min.js"></script>
+    <script src="/tasaryericom/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var code = $("#code");
+            var submitButton = $("#submitbtn");
+
+            // Sayfa yüklendiğinde
+            submitButton.prop("disabled", true);
+
+            // E-posta alanına giriş yapıldığında
+            code.on("input", function () {
+                if ($(this).val().trim() !== "") {
+                    submitButton.prop("disabled", false);
+                } else {
+                    submitButton.prop("disabled", true);
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>

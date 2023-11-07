@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<body>
+
+	<!-- Page info -->
+	<div class="page-top-info">
+		<div class="container">
+			<h4>İletişim</h4>
+			<div class="site-pagination">
+				<a href="">Ana Sayfa</a> /
+				<a href="">İletişim</a>
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- Banner section -->
+	<partial name="/Views/Shared/Partials/_BannerPartial.cshtml" />
+	<!-- Banner section end  -->
+
+
+	<!-- Contact section -->
+	<section class="contact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 contact-info">
+					<h3>Bizimle İletişim Kurun</h3>
+					<p>TASARYERİ.COM, İSTANBUL</p>
+					<p>+546 990221 123</p>
+					<p>tasaryericom@gmail.com</p>
+@* 					<div class="contact-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div> *@
+					<form class="contact-form" method="post">
+						<input type="text" placeholder="Adınız" name="ContactUserName">
+						<input type="text" placeholder="Email" name="ContactMail">
+						<input type="text" placeholder="Konu" name="ContactSubject">
+						<textarea placeholder="Mesajınız" name="ContactMessage"></textarea>
+						<button class="site-btn" type="submit">Gönder</button>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<div class="map"><iframe src="https://maps.google.com/maps?q=%C5%9Fi%C5%9Fli%20white%20hotel,%C4%B0stanbul&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0" allowfullscreen></iframe></div>
+	</section>
+	<!-- Contact section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="/tasaryericom/js/jquery-3.2.1.min.js"></script>
+	<script src="/tasaryericom/js/bootstrap.min.js"></script>
+	<script src="/tasaryericom/js/jquery.slicknav.min.js"></script>
+	<script src="/tasaryericom/js/owl.carousel.min.js"></script>
+	<script src="/tasaryericom/js/jquery.nicescroll.min.js"></script>
+	<script src="/tasaryericom/js/jquery.zoom.min.js"></script>
+	<script src="/tasaryericom/js/jquery-ui.min.js"></script>
+	<script src="/tasaryericom/js/main.js"></script>
+
+</body>
+</html>
+

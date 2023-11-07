@@ -1,0 +1,66 @@
+﻿@model List<Notification>
+
+<li class="dropdown">
+    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+        <i class="fa fa-bell"></i>  <span class="label label-primary">@ViewBag.Count</span>
+    </a>
+    <ul class="dropdown-menu dropdown-alerts">
+        <li style="display: flex; justify-content: center; align-items: center;">
+            <a href="mailbox.html" class="dropdown-item">
+                <div >
+                    <h5>BİLDİRİMLER</h5>
+                </div>
+            </a>
+        </li>
+        @if (@ViewBag.Count == 0)
+        {
+            <li class="dropdown-divider"></li>
+
+            <li>
+                <div class="dropdown-messages-box">
+                    <a class="dropdown-item float-left" href="profile.html">
+                        <img alt="image" class="rounded-circle" src="/photos/no-alarm.png">
+                    </a>
+                    <div style="margin: auto;">
+                        <p style="font-size: 15px;">HERHANGİ BİR BİLDİRİMİNİZ YOK.</p>
+                    </div>
+                </div>
+            </li>
+        }
+        else
+        {
+            @foreach (var item in Model)
+            {
+
+                <li class="dropdown-divider"></li>
+                <li>
+                    <div class="dropdown-messages-box">
+                        <a class="dropdown-item float-left" href="profile.html">
+                            @* <img alt="image" class="rounded-circle" src="@item.NotificationTypeSymbol"> *@
+                            <i class="@item.NotificationTypeSymbol"></i>
+                        </a>
+                        <div>
+                            @* <small class="float-right text-navy">5h ago</small> *@
+                            <p style="font-size:15px">@item.NotificationDetails</p>
+                            <small class="text-muted float-right">@item.NotificationDate</small>
+                        </div>
+                    </div>
+                    <br>
+                </li>
+            }
+        }
+      
+        <li class="dropdown-divider"></li>
+        <li>
+            <div class="text-center link-block">
+                <a href="/Notification/AllNotification/" class="dropdown-item">
+                    <strong>Tüm Bildirimleri Gör</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </li>
+        
+       
+        
+    </ul>
+</li>

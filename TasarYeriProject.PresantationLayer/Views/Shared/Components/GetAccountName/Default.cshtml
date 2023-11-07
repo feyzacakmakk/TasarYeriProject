@@ -1,0 +1,95 @@
+﻿
+<div id="account">
+	@if (@ViewBag.UserFullName != null)
+	{
+		<ul class="main-menu">
+			<li>
+				<img style="width:30px; height:28px;" class="rounded-circle ml-3 " src="@ViewBag.ImageUrl" /> <a href="#" class="mt-2" style="font-size:15px;"> Hesabım</a>
+				
+				@if (User.IsInRole("Admin"))
+				{
+					<ul class="sub-menu">
+						<li style="margin-left: 10px;">@ViewBag.UserFullName </li>
+						<li>
+							<a href="/Admin/Home/Index">
+								<i class="fa fa-user-o"></i> HESABIM
+							</a>
+
+						</li>
+
+						<li>
+							<a href="/Login/Logout">
+								<i class="fa fa-sign-out" aria-hidden="true"></i> ÇIKIŞ YAP
+
+							</a>
+						</li>
+					</ul>
+				}
+				else if (User.IsInRole("Satıcı"))
+				{
+					<ul class="sub-menu">
+						<li style="margin-left: 10px;">@ViewBag.UserFullName </li>
+						<li>
+							<a href="/SellerDashboard/Index">
+								<i class="fa fa-user-o"></i> HESABIM
+							</a>
+
+						</li>
+
+						<li>
+							<a href="/Login/Logout">
+								<i class="fa fa-sign-out" aria-hidden="true"></i> ÇIKIŞ YAP
+
+							</a>
+						</li>
+					</ul>
+				}
+				else
+				{
+					<ul class="sub-menu">
+						<li style="margin-left: 10px;">@ViewBag.UserFullName </li>
+						<li>
+							<a href="/MyAccount/Index">
+								<i class="fa fa-user-o"></i> HESABIM
+							</a>
+
+						</li>
+
+						<li>
+							<a href="/Login/Logout">
+								<i class="fa fa-sign-out" aria-hidden="true"></i> ÇIKIŞ YAP
+
+							</a>
+						</li>
+					</ul>
+					
+				}
+				
+			</li>
+			<li>
+				<img style="width:30px; height:28px;" class="rounded-circle" src="/photos/add-to-cart.png" /> <a href="#" class="mt-2" style="font-size:15px;"> Sepetim</a>
+			</li>
+		</ul>
+	}
+	@if (@ViewBag.UserFullName == null)
+	{
+		<i class="flaticon-profile"></i><a href="/Login/Index"> Giriş Yapın ya</a> <a href="/Register/Index">da Hesap oluşturun </a>
+		<div class="shopping-card ml-1">
+		<i class="flaticon-bag"></i>
+		</div>
+		<a href="./cart.html">Sepetim</a>
+	}
+
+</div>
+	
+@* 
+
+<script>
+	// Kullanıcı giriş yaptığında çalışacak kod
+	function onUserLoggedIn() {
+	  document.getElementById("hesabimText").style.display = "block";
+	}
+
+	// Örnek olarak, kullanıcı giriş yaptığında bu fonksiyonu çağırabilirsiniz
+	onUserLoggedIn();
+</script> *@

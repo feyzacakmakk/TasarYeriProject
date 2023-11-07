@@ -1,0 +1,56 @@
+﻿
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <link rel="stylesheet" href="/tasaryericom/css/commentcss/style.css" />
+</head>
+<body>
+    @if (@ViewBag.UserFullName != null)
+    {
+        <div class="comment-form container">
+            <h3>Yorum Yap</h3>
+            <form method="post" asp-action="AddComment" asp-controller="Comment">
+                <!-- Yorumu kaydetmek için gerekli olan action ve method değerlerini ayarlayın -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="username">Kullanıcı Adı</label>
+                            <input type="text" name="@ViewBag.UserId" value="@ViewBag.UserFullName" required disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="content">Yorum İçeriği</label>
+                            <textarea name="CommentContent" rows="4" required></textarea>
+                        </div>
+                        <input type="hidden" name="ProductId" value="@Model" required>
+                        <button type="submit" class="float-right">Yorum Gönder</button>
+                       @*  @if (@ViewBag.UserFullName == null)
+                        {
+                            <p>Lütfen yorum yapabilmek için <a href="/Login/Index/">giriş yapın</a>.</p>
+                        } 
+                        else
+                        {
+                            <button type="submit" class="float-right">Yorum Gönder</button>
+                        }*@
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    }
+    else
+    {
+        <div class="container">
+            <div class="row">
+                <div class="comment col-lg-12">
+                    <div class="comment-details commentLogin">
+                        <p style="font-size:20px; padding-left:5px; padding-right:5px; padding-top:5px; padding-bottom:5px;">Lütfen yorum yapabilmek için <a href="/Login/Index/">giriş yapın</a>..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    }
+
+
+</body>
+</html>

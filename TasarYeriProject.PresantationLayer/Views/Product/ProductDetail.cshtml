@@ -1,0 +1,143 @@
+﻿@model Product
+
+
+@{
+    ViewData["Title"] = Model.ProductName;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<link rel="stylesheet" href="~/tasaryericom/css/style.css" />
+<body>
+
+
+
+    <!-- Page info -->
+    <div class="page-top-info">
+        <div class="container">
+            <h4>@Model.ProductName</h4>
+            <div class="site-pagination">
+                <a href="/Home/Index/">Ana Sayfa</a> /
+                <a href="/Product/Index/">Kategoriler</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page info end -->
+    <!-- product section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="back-link">
+                <a href="/Product/Index/"> &lt;&lt; Ürünlere Dön</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-pic-zoom">
+                        <img class="product-big-img" src="@Model.ImageUrl" alt="">
+                    </div>
+                    <div class="product-thumbs" tabindex="1" style="overflow: hidden; outline: none;">
+                        <div class="product-thumbs-track">
+                            <div class="pt active" data-imgbigurl="@Model.ImageUrl"><img src="@Model.ImageUrl" alt=""></div>
+                            @if (Model.ImageUrl2 != null)
+                            {
+                                <div class="pt" data-imgbigurl="@Model.ImageUrl2"><img src="@Model.ImageUrl2" alt=""></div>
+                            }
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 product-details">
+                    <h2 class="p-title">@Model.ProductName</h2>
+                    <h3 class="p-price">@Model.Price <i class="fa fa-try" aria-hidden="true"></i></h3>
+                    <h4 class="p-stock">Stok Durumu: 
+                        @if (@Model.StockQuantity > 0)
+                        {
+                            <span>Mevcut</span>
+                        }
+                        else
+                        {
+                            <span>Ürün Stokta Yok.</span>
+                        }
+
+                    </h4>
+                    <h4 class="p-stock">Ürün Satıcısı: <span>@Model.AppUser.Name @Model.AppUser.Surname</span></h4>
+                    <div class="p-rating">
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o fa-fade"></i>
+                    </div>
+                    <div class="p-review">
+                        <a href="">@ViewBag.Comments yorum</a>|<a href="#add-comment">Yorum ekle</a>
+                    </div>
+                    <div class="fw-size-choose">
+                        <p>Beden</p>
+                        <div class="sc-item">
+                            <input type="radio" name="sc" id="xs-size">
+                            <label for="xs-size">32</label>
+                        </div>
+                        <div class="sc-item">
+                            <input type="radio" name="sc" id="s-size">
+                            <label for="s-size">34</label>
+                        </div>
+                        <div class="sc-item">
+                            <input type="radio" name="sc" id="m-size" checked="">
+                            <label for="m-size">36</label>
+                        </div>
+                        <div class="sc-item">
+                            <input type="radio" name="sc" id="l-size">
+                            <label for="l-size">38</label>
+                        </div>
+                        <div class="sc-item disable">
+                            <input type="radio" name="sc" id="xl-size" disabled>
+                            <label for="xl-size">40</label>
+                        </div>
+                        <div class="sc-item">
+                            <input type="radio" name="sc" id="xxl-size">
+                            <label for="xxl-size">42</label>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <p>Miktar</p>
+                        <div class="pro-qty"><input type="text" value="1"></div>
+                    </div>
+                    <a href="#" class="site-btn">Sepete Ekle</a>
+                    <div id="accordion" class="accordion-area">
+                        <div class="panel">
+                            <div class="panel-header" id="headingOne">
+                                <button class="panel-link active" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Özellikler</button>
+                            </div>
+                            <div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="panel-body">
+                                    <p>@Model.ProductDescription</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- product section end -->
+
+
+    @await Component.InvokeAsync("CommentList", new {product_id = Model.ProductId}) 
+    @* @await Component.InvokeAsync("CommentList", new {product_id = ViewBag.product_id})  *@
+    @* iki yol da olur  *@
+
+    <div id="add-comment"></div>
+    <br />
+    @await Html.PartialAsync("~/Views/Comment/AddComment.cshtml", Model.ProductId)
+    <!-- Banner section -->
+    <partial name="/Views/Shared/Partials/_BannerPartial.cshtml" />
+    <!-- Banner section end  -->
+    <!--view comp olacak-->
+    <!-- OTHER PRODUCTS section -->
+    @await Component.InvokeAsync("OtherProducts");
+    <!-- OTHER PRODUCTS section end -->
+
+
+</body>
+</html>

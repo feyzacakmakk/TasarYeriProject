@@ -1,0 +1,64 @@
+﻿@model List<Product>
+
+@* <div class="col-sm-9 m-b-xs">
+    <div data-toggle="buttons" class="btn-group btn-group-toggle">
+        <label class="btn btn-sm btn-white"> <input type="radio" id="option1" name="options"> Gün </label>
+        <label class="btn btn-sm btn-white active"> <input type="radio" id="option2" name="options"> Hafta </label>
+        <label class="btn btn-sm btn-white"> <input type="radio" id="option3" name="options"> Ay </label>
+    </div>
+</div>
+<div class="col-sm-3">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control form-control-sm" placeholder="Arama yapın...">
+        <div class="input-group-append">
+            <button class="btn btn-sm btn-primary" type="button">Ara!</button>
+        </div>
+    </div>
+</div> *@
+<div class="col-sm-12 m-b-xs">
+    @if (@ViewBag.ProductAddedToday == 0)
+    {
+        <h1>BUGÜN HİÇ ÜRÜN EKLEMEDİNİZ</h1>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+
+                        <th>Adı </th>
+                        <th>Açıklama </th>
+                        <th>Kategori </th>
+                        <th>Stok adedi </th>
+                        <th>Fiyat</th>
+                        <th>Tarih</th>
+                        <th>Durum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+
+                        <tr>
+                            <td>
+                                <a href="/Product/SellerDashboardProductDetail/@item.ProductId/">
+                                    @item.ProductName
+                                </a>                           
+                            </td>
+                            <td>@item.ProductDescription</td>
+                            <td>@item.CategoryId</td>
+                            <td>@item.StockQuantity</td>
+                            <td>@item.Price <i class="fa fa-try" aria-hidden="true"></i></td>
+                            <td>@(((DateTime)item.AddedDate).ToString("dd-MMM-yyyy"))</td>
+                            <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    }
+    
+</div>

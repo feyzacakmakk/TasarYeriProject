@@ -1,0 +1,84 @@
+﻿@model List<Message>
+@{
+	ViewData["Title"] = "MemberInbox";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<body>
+
+	<!-- Page info -->
+	<div class="page-top-info">
+		<div class="container">
+			<h4>Hesabım</h4>
+			<div class="site-pagination">
+				<a href="">Ana Sayfa</a> /
+				<a href="">Hesabım</a>
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+	<!--iframe section -->
+	<section class="spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 order-2 order-lg-1" style="margin-right: 90px;">
+					<div class="filter-widget">
+						<partial name="/Views/MyAccount/Partials/_AccountCategoriesPartial.cshtml" />
+					</div>
+
+				</div>
+
+				<!-- iframe kısmı -->
+				<div class="col-lg-8  order-1 order-lg-2 mb-5 mb-lg-0 memberpanel">
+					<h2 class="mb-5">Giden Kutusu (@TempData["SendCountMember"])</h2>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Gönderen</th>
+								<th>Konu</th>
+								<th>Tarih</th>
+								<th>Sil</th>
+
+							</tr>
+						</thead>
+						<tbody>
+
+							@foreach (var item in Model)
+							{
+								<tr>
+									<td class="message"><a href="/Message/MemberMessageDetail/@item.MessageId/">@item.ReceiverUser.Name @item.ReceiverUser.Surname</a></td>
+									<td>@item.Subject</td>
+									<td>@item.MessageDate.ToString("dd.MM.yyyy HH:mm")</td>
+									<td><a href="/Message/MemberDeleteMessage/@item.MessageId/" class="btn btn-danger btn-sm">Sil</a></td>
+								</tr>
+							}
+
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Category section end -->
+	<!-- Banner section -->
+	<partial name="/Views/Shared/Partials/_BannerPartial.cshtml" />
+	<!-- Banner section end  -->
+	<!-- letest product section -->
+	@await Component.InvokeAsync("RecentlyAddedProducts");
+	<!-- letest product section end -->
+	<!--====== Javascripts & Jquery ======-->
+	<script src="/tasaryericom/js/jquery-3.2.1.min.js"></script>
+	<script src="/tasaryericom/js/bootstrap.min.js"></script>
+	<script src="/tasaryericom/js/jquery.slicknav.min.js"></script>
+	<script src="/tasaryericom/js/owl.carousel.min.js"></script>
+	<script src="/tasaryericom/js/jquery.nicescroll.min.js"></script>
+	<script src="/tasaryericom/js/jquery.zoom.min.js"></script>
+	<script src="/tasaryericom/js/jquery-ui.min.js"></script>
+	<script src="/tasaryericom/js/main.js"></script>
+
+</body>
+</html>

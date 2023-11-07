@@ -1,0 +1,82 @@
+﻿@model List<Message>
+@{
+    ViewData["Title"] = "Mesajlar";
+    Layout = "~/Views/Shared/_SellerDashboardLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-lg-12 animated fadeInRight">
+                <div class="mail-box-header">
+                    <h2>
+                        Giden Mesajlar (@TempData["SendCount"])
+                    </h2>
+                    <div class="mail-tools tooltip-demo m-t-md">
+                        <div class="btn-group float-right">
+                            <button class="btn btn-white btn-sm"><i class="fa fa-arrow-left"></i></button>
+                            <button class="btn btn-white btn-sm"><i class="fa fa-arrow-right"></i></button>
+
+                        </div>
+                        <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="left"><i class="fa fa-refresh"></i> Yenile</button>
+                        <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" ><i class="fa fa-eye"></i> </button>
+                        <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top"><i class="fa fa-exclamation"></i> </button>
+                        <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top"><i class="fa fa-trash-o"></i> </button>
+
+                    </div>
+                </div>
+                <div class="mail-box">
+
+                    <table class="table table-hover table-mail">
+                        <thead>
+                            <tr>
+                                <th>Alıcı</th>
+                                <th>Konu</th>
+                                <th>Tarih</th>
+                                <th>Detaya Git</th>
+                            </tr>
+                           
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr class="read">
+                                    <td class="mail-contact"><a href="/Message/MessageDetail/@item.MessageId/">@item.ReceiverUser.Name @item.ReceiverUser.Surname</a></td>
+                                    <td class="mail-subject"><a href="">@item.Subject</a></td>
+                                    <td class=" mail-date">@item.MessageDate.ToString("dd.MM.yyyy HH:mm")</td>
+                                    <td><a class="btn btn-sm btn-info btn-outline" href="/Message/MessageDetail/@item.MessageId/"><i class="fa fa-reply"></i> Detaya Git</a></td>
+                                    
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <partial name="/Views/Shared/SellerDashboardPartials/_ScriptPartial.cshtml" />
+
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</body>
+
+</html>

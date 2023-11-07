@@ -1,0 +1,74 @@
+﻿<div class="col-lg-3">
+    <div class="ibox ">
+        <div class="ibox-title">
+            <span class="label label-success float-right">Aylık</span>
+            <h5>Gelir</h5>
+        </div>
+        <div class="ibox-content">
+            <h1 class="no-margins">@ViewBag.ProductSum</h1>
+            <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>
+            <small>Toplam Gelir</small>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3">
+    <div class="ibox ">
+        <div class="ibox-title">
+            <span class="label label-info float-right">Yıllık</span>
+            <h5>Siparişler</h5>
+        </div>
+        <div class="ibox-content">
+            <h1 class="no-margins">@ViewBag.ProductsCount</h1>
+            <div class="stat-percent font-bold text-info">20% <i class="fa fa-level-up"></i></div>
+            <small>Yeni Siparişler</small>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3">
+    <div class="ibox ">
+        <div class="ibox-title">
+            <span class="label label-primary float-right">Son 15 Gün</span>
+            <h5>Ürünler</h5>
+        </div>
+        <div class="ibox-content">
+            <h1 class="no-margins">@ViewBag.ProductsCount</h1>
+            
+                @if (@ViewBag.Percentage>=50)
+                {
+                    <div class="stat-percent font-bold text-navy">@ViewBag.Percentage%  
+                    <i class="fa fa-level-up"></i></div>
+                }
+                 else if (@ViewBag.Percentage >= 0 && @ViewBag.Percentage < 50)
+                {
+                    
+                    <div class="stat-percent font-bold text-danger">@ViewBag.Percentage% 
+                        <i class="fa fa-level-down"></i>
+                        </div>
+                }
+                else
+                {
+                    <div class="stat-percent font-bold text-navy">
+                        0%
+                    <i class="fa fa-arrow-right"></i>
+                    </div>
+                
+                }
+                
+            
+            <small>Eklenen Ürünler</small>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3">
+    <div class="ibox ">
+        <div class="ibox-title">
+            <span class="label label-danger float-right">Düşük Değer</span>
+            <h5>Aktif Kullanıcı</h5>
+        </div>
+        <div class="ibox-content">
+            <h1 class="no-margins">@ViewBag.Value</h1>
+            <div class="stat-percent font-bold text-danger">38% <i class="fa fa-level-down"></i></div>
+            <small>İlk Ayda</small>
+        </div>
+    </div>
+</div>

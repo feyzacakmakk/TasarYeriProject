@@ -1,0 +1,58 @@
+﻿@model List<Message>
+
+<li class="dropdown">
+    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+        <i class="fa fa-envelope"></i>  <span class="label label-warning">@ViewBag.Count</span>
+    </a>
+    <ul class="dropdown-menu dropdown-messages">
+        <li style="display: flex; justify-content: center; align-items: center;">
+            <a href="mailbox.html" class="dropdown-item">
+                <div>
+                    <h5>MESAJLAR</h5>
+                </div>
+            </a>
+        </li>
+        @if (@ViewBag.Count == 0)
+        {
+            <li class="dropdown-divider"></li>
+
+            <li>
+                <div class="dropdown-messages-box">
+                    <a class="dropdown-item float-left" href="/photos/speak.png">
+                        <img alt="image" class="rounded-circle" src="/photos/no-alarm.png">
+                    </a>
+                    <div style="margin: auto;">
+                        <p style="font-size: 15px;">HERHANGİ BİR MESAJINIZ YOK.</p>
+                    </div>
+                </div>
+            </li>
+        }
+        else
+        {
+            @foreach (var item in Model)
+            {
+                <li class="dropdown-divider"></li>
+                <li>
+                    <div class="dropdown-messages-box">
+                        <a class="dropdown-item float-left" href="profile.html">
+                            <img alt="image" class="rounded-circle" src="@item.SenderUser.ImageUrl">
+                        </a>
+                        <div>
+                            @* <small class="float-right">46h ago</small> *@
+                            <strong>@item.SenderUser.Name @item.SenderUser.Surname </strong> sana mesaj gönderdi. <br>
+                            <small class="text-muted">@item.MessageDate.ToShortDateString()</small>
+                        </div>
+                    </div>
+                </li>
+            }
+            
+        }
+        <li>
+            <div class="text-center link-block">
+                <a href="/Message/Inbox" class="dropdown-item">
+                    <i class="fa fa-envelope"></i> <strong>Tüm mesajlar</strong>
+                </a>
+            </div>
+        </li>
+    </ul>
+</li>

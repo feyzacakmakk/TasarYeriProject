@@ -1,0 +1,106 @@
+﻿
+@model AppUserEditDto
+@{
+    ViewData["Title"] = "Üye Hesap Sayfası";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<body>
+	
+	<!-- Page info -->
+	<div class="page-top-info">
+		<div class="container">
+			<h4>Hesabım</h4>
+			<div class="site-pagination">
+				<a href="">Ana Sayfa</a> /
+				<a href="">Hesabım</a>
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+	<!--iframe section -->
+	<section class="spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 order-2 order-lg-1" style="margin-right: 90px;">
+					<div class="filter-widget">
+						<partial name="/Views/MyAccount/Partials/_AccountCategoriesPartial.cshtml" />
+					</div>
+
+				</div>
+
+				<!-- iframe kısmı -->
+				<div class="col-lg-8  order-1 order-lg-2 mb-5 mb-lg-0 memberpanel">
+
+                   
+						<div class="mb-5" style="text-align: center;">
+							<label for="exampleFormControlInput1" class="form-label" style="font-size: 20px;">  PROFİL BİLGİLERİ  </label>
+
+						</div>
+						<div class="row" >
+							<div class="col-lg-3">
+								<img src="@Model.ImageUrl" class="rounded-circle" style="width:150px; height:150px;" />
+							</div>
+							<div class="col-lg-8">
+							<label  class="form-label">KİŞİSEL BİLGİLER</label>
+								<div class="ml-3">
+								<i class="fa fa-circle-thin"></i><label for="exampleFormControlInput1" class="form-label ml-1"> Adınız: @Model.Name</label>
+									<br />
+								<i class="fa fa-circle-thin"></i><label for="exampleFormControlInput1" class="form-label ml-1">Soyadınız: @Model.Surname</label>
+									<br />
+								<i class="fa fa-circle-thin"></i><label for="exampleFormControlTextarea1" class="form-label ml-1">
+									Hakkınızda: @Model.AboutText
+								</label>
+								<br />
+								<i class="fa fa-circle-thin"></i><label for="exampleFormControlInput1" class="form-label ml-1">Telefon Numaranız: @Model.PhoneNumber</label>
+									<br />
+								<i class="fa fa-circle-thin"></i><label for="exampleFormControlInput1" class="form-label ml-1">Email: @Model.Email</label>
+								</div>
+								<br />
+								<label class="form-label">ADRES BİLGİLERİ</label>
+								<br />
+								<div class="ml-3">
+								<i class="fa fa-circle-thin"></i><label for="exampleFormControlTextarea1" class="form-label ml-1">Adresiniz: @Model.Address</label>
+								<br />
+								<i class="fa fa-circle-thin"></i><label for="exampleFormControlTextarea1" class="form-label ml-1">Şehir: @Model.CityName</label>
+								</div>
+							</div>
+						</div>
+
+					<a href="/MyAccount/EditProfile/" class="btn btn-sm float-right mt-5" style="background-color: #f3a04c;">Profil Bilgilerini Düzenle</a>
+                        
+                        
+                            
+                            
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Category section end -->
+
+	<!-- Banner section -->
+	<partial name="/Views/Shared/Partials/_BannerPartial.cshtml" />
+	<!-- Banner section end  -->
+
+	<!-- letest product section -->
+	@await Component.InvokeAsync("RecentlyAddedProducts");
+	<!-- letest product section end -->
+
+	
+	<!--====== Javascripts & Jquery ======-->
+	<script src="/tasaryericom/js/jquery-3.2.1.min.js"></script>
+	<script src="/tasaryericom/js/bootstrap.min.js"></script>
+	<script src="/tasaryericom/js/jquery.slicknav.min.js"></script>
+	<script src="/tasaryericom/js/owl.carousel.min.js"></script>
+	<script src="/tasaryericom/js/jquery.nicescroll.min.js"></script>
+	<script src="/tasaryericom/js/jquery.zoom.min.js"></script>
+	<script src="/tasaryericom/js/jquery-ui.min.js"></script>
+	<script src="/tasaryericom/js/main.js"></script>
+
+</body>
+</html>

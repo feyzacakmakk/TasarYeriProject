@@ -1,0 +1,43 @@
+﻿@model List<Comment>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_SellerDashboardLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="container mt-5">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+
+                        <th>Ürün Adı</th>
+                        <th>Yorum</th>
+                        <th>Yorumu Yapan  </th>
+                        <th>Yorum Tarihi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+
+                        <tr>
+                            <td>@item.Product.ProductName</td>
+                            <td>@item.CommentContent</td>
+                            <td>@item.AppUser.Name @item.AppUser.Surname</td>
+                            <td>@(((DateTime)item.CommentDate).ToString("dd-MMM-yyyy"))</td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <partial name="/Views/Shared/SellerDashboardPartials/_ScriptPartial.cshtml" />
+</body>
+</html>

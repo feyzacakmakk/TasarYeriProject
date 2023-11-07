@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Product>
+<!-- OTHER PRODUCTS section -->
+<section class="related-product-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Diğer Ürünler</h2>
+        </div>
+        <div class="product-slider owl-carousel">
+            @foreach (var item in Model)
+            {
+                <div class="product-item">
+                    <div class="pi-pic">
+                        <a href="/Product/ProductDetail/@item.ProductId"><img src="@item.ImageUrl" alt=""></a>
+                        <div class="pi-links">
+                            <a href="#" class="add-card"><i class="flaticon-bag"></i><span>Sepete Ekle</span></a>
+                            <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="pi-text">
+                        <h6>@item.Price <i class="fa fa-try" aria-hidden="true"></i></h6>
+                        <p>@item.ProductName </p>
+                    </div>
+                </div>
+            }
+            
+
+        </div>
+    </div>
+</section>
+<!-- OTHER PRODUCTS section end -->

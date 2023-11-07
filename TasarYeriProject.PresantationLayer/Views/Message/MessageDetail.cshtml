@@ -1,0 +1,89 @@
+﻿@model Message
+@{
+    ViewData["Title"] = "MessageDetail";
+    Layout = "~/Views/Shared/_SellerDashboardLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <div class="wrapper wrapper-content">
+        <div class="row">
+           @*  <div class="col-lg-3">
+                <div class="ibox ">
+                    <div class="ibox-content mailbox-content">
+                        <div class="file-manager">
+                            <a class="btn btn-block btn-primary compose-mail" href="mail_compose.html">Yeni Mesaj Oluştur</a>
+                            <div class="space-25"></div>
+                             <h5>Folders</h5> 
+                             <ul class="folder-list m-b-md" style="padding: 0">
+                                <li><a href="/Message/Inbox"> <i class="fa fa-inbox "></i> Gelen Kutusu <span class="label label-warning float-right">16</span> </a></li>
+                                <li><a href="/Message/SendeMessage"> <i class="fa fa-envelope-o"></i> Mesaj Gönder</a></li>
+                                <li><a href="mailbox.html"> <i class="fa fa-certificate"></i> Important</a></li>
+                                <li><a href="mailbox.html"> <i class="fa fa-trash-o"></i> Sil</a></li>
+                            </ul>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>  *@
+            <div class="col-lg-12 animated fadeInRight">
+                <div class="mail-box-header">
+                    <h2>
+                        MESAJ DETAYI
+                    </h2>
+                    <div class="mail-tools tooltip-demo m-t-md">
+
+
+                        <h3>
+                            <span class="font-normal">Konu: </span>@Model.Subject
+                        </h3>
+                        <h5>
+                            <span class="float-right font-normal">@Model.MessageDate.ToShortDateString()</span>
+                            <span class="font-normal">Kimden: </span>@Model.SenderUser.Name @Model.SenderUser.Surname
+                            <br />
+                            <span class="font-normal">Kime: </span>@Model.ReceiverUser.Name @Model.ReceiverUser.Surname
+                        </h5>
+                    </div>
+                </div>
+                <div class="mail-box">
+
+
+                    <div class="mail-body">
+                        <p>
+                            @Model.MessageDetails
+                        </p>
+                    </div>
+                    <div class="mail-body text-right tooltip-demo">
+                        <a class="btn btn-sm btn-white" href="/Message/ReplyMessage/@Model.ReceiverId/"><i class="fa fa-reply"></i> Cevapla</a>
+                        <a class="btn btn-sm btn-white" href="/Message/DeleteMessage/@Model.MessageId/"><i class="fa fa-trash-o"></i> Sil</a>
+                    </div>
+                    <div class="clearfix"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+      
+            
+    
+
+    <partial name="/Views/Shared/SellerDashboardPartials/_ScriptPartial.cshtml" />
+
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</body>
+
+</html>
