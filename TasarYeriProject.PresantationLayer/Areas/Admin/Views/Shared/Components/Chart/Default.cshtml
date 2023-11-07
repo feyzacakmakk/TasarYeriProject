@@ -1,0 +1,88 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="zxx">
+<body>
+    <div class="col-lg-9">
+        <div>
+            @* <div class="flot-chart-content" id="flot-chart1"></div> *@
+            <canvas id="flot-chart1"></canvas>
+        </div>
+    </div>
+    <div class="col-lg-3 mt-5">
+        <ul class="stat-list">
+            <li>
+                <h2 class="no-margins">2,346</h2>
+                <small>Toplam Sipariş</small>
+                <div class="stat-percent">48% <i class="fa fa-level-up text-navy"></i></div>
+                <div class="progress progress-mini">
+                    <div style="width: 48%;" class="progress-bar"></div>
+                </div>
+            </li>
+            <li>
+                <h2 class="no-margins ">4,422</h2>
+                <small>Son Aydaki Siparişler</small>
+                <div class="stat-percent">60% <i class="fa fa-level-down text-navy"></i></div>
+                <div class="progress progress-mini">
+                    <div style="width: 60%;" class="progress-bar"></div>
+                </div>
+            </li>
+            <li>
+                <h2 class="no-margins ">9,180</h2>
+                <small>Siparişlerden Aylık Gelir</small>
+                <div class="stat-percent">22% <i class="fa fa-bolt text-navy"></i></div>
+                <div class="progress progress-mini">
+                    <div style="width: 22%;" class="progress-bar"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('flot-chart1').getContext('2d');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Ocak', 'Blue', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran'],
+                datasets: [{
+                    label: 'Toplam Sipariş',
+                    data: [1222, 7932, 3212, 5312, 2232, 3212, 2111],
+                    borderWidth: 2,
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                }, {
+                    label: 'Son Aydaki Siparişler ',
+                    data: [1232, 792, 323, 533, 229, 321, 215],
+                    borderWidth: 2,
+                    fill: false,
+                    borderColor: ' rgb(197,155,100)',
+                    tension: 0.1
+                },
+                {
+                    label: 'Siparişlerden Aylık Gelir',
+                    data: [12042, 7900, 10232, 5333, 12221, 13232, 20131],
+                    borderWidth: 2,
+                    fill: false,
+                    borderColor: 'rgb(226,140,26)',
+                    tension: 0.1
+                }
+
+
+
+
+
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿@model UserRoleViewModel
+
+@if (Model != null && Model.Roles != null && Model.Roles.Any())
+{
+     @string.Join(", ", Model.Roles)
+}
+
+
+
+

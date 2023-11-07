@@ -1,0 +1,163 @@
+﻿@using TasarYeriProject.EntityLayer.Concrete
+@model Product
+@{
+    ViewData["Title"] = "ProductDetail";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>ÜRÜN DETAYI</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/SellerDashboard/Index">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a>Ürünler</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>@Model.ProductName</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="ibox product-detail">
+                    <div class="ibox-content">
+
+                        <div class="row">
+                            <div class="col-md-5">
+
+
+
+                                <div class="product-images">
+
+                                    <div>
+                                        <div class="image-slider">
+                                            <img src="@Model.ImageUrl" />
+                                        </div>
+                                    </div>
+                                    @if (Model.ImageUrl2 != null)
+                                    {
+                                        <div>
+                                            <div class="image-slider">
+                                                <img src="@Model.ImageUrl2" />
+                                            </div>
+                                        </div>
+                                    }
+                                    
+
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-md-7">
+
+                                <h2 class="font-bold m-b-xs">
+                                    @Model.ProductName
+                                </h2>
+
+                                <div class="m-t-md">
+                                    <h2 class="product-main-price">@Model.Price <i class="fa fa-try" aria-hidden="true"></i>  </h2>
+                                </div>
+                                <hr>
+
+                                <h4>Ürün Açıklaması</h4>
+
+                                <div class="small text-muted">
+                                    @Model.ProductDescription
+                                </div>
+                                <dl class="small m-t-md">
+                                    <dt>Stok Durumu</dt>
+                                    <dd>@Model.StockQuantity</dd>
+                                    <dt>Ürün Satıcısı</dt>
+                                    <dd>@Model.AppUser.Name @Model.AppUser.Surname</dd>
+                                    @* <dt>Özellikler</dt>
+                                    <dd>@Model.ProductDescription</dd>
+                                    <dt>Taşıma & İade Detayları</dt>
+                                    <dd>@Model.ProductDescription</dd> *@
+                                </dl>
+                                <hr>
+
+                                <div>
+                                    <div class="btn-group">
+                                        <a href="/Admin/Product/EditProduct/@Model.ProductId/" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Düzenle</a>
+                                        <a href="/Admin/Product/DeleteProduct/@Model.ProductId/" class="btn btn-danger btn-sm" onclick="return confirm('Silmek istediğine emin misin?');"><i class="fa fa-trash" aria-hidden="true"></i> Ürünü Sil </a>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="ibox-footer">
+                        <span class="float-right">
+                            <i class="fa fa-clock-o"></i> @Model.AddedDate.ToString("dd-MMM-yyyy HH:mm")
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Yorumlar </h5>
+                    </div>
+                    <div class="ibox-content ">
+                        <div class="row">
+                            @await Component.InvokeAsync("CommentListProductDetail", new {product_id = Model.ProductId})
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="/AdminTema/js/jquery-3.1.1.min.js"></script>
+    <script src="/AdminTema/js/popper.min.js"></script>
+    <script src="/AdminTema/js/bootstrap.js"></script>
+    <script src="/AdminTema/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/AdminTema/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="/AdminTema/js/inspinia.js"></script>
+    <script src="/AdminTema/js/plugins/pace/pace.min.js"></script>
+
+    <!-- slick carousel-->
+    <script src="/AdminTema/js/plugins/slick/slick.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+
+            $('.product-images').slick({
+                dots: true
+            });
+
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+﻿@using TasarYeriProject.DtoLayer.Dtos.ProductDtos
+@model AddProductDtos
+@{
+    ViewData["Title"] = "AddProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>ÜRÜN EKLEME</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Ana Sayfa</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Ürün Ekleme</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="wrapper wrapper-content animated fadeInRight ecommerce">
+
+        <div class="row">
+            <div class="col-lg-12 mb-5">
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li><a class="nav-link active" data-toggle="tab" href="#tab-1"> Ürün Bilgileri</a></li>
+                        <li><a class="nav-link" data-toggle="tab" href="#tab-2"> Fotoğraflar</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                                <form class="form-group" asp-action="AddProduct" asp-controller="Product" method="post" enctype="multipart/form-data">
+                                    <table class="table table-bordered table-striped">
+                                        @Html.Label("Ürün Adı")
+                                        @Html.TextBoxFor(x=> x.ProductName, new {@class="form-control"})
+                                        @Html.ValidationMessageFor(x=>x.ProductName,"")
+                                        <br />
+                                        @Html.Label("Ürünün Fiyatı")
+                                        @Html.TextBoxFor(x=> x.Price, new {@class="form-control"})
+                                        @Html.ValidationMessageFor(x=>x.Price)
+                                        <br />
+                                        @Html.Label("Ürün Stok Miktarı")
+                                        @Html.TextBoxFor(x=> x.StockQuantity, new {@class="form-control"})
+                                        @Html.ValidationMessageFor(x=>x.StockQuantity)
+                                        <br />
+                                        @Html.Label("Ürün Fotoğrafı 1")
+                                        <input type="file" name="Image" />
+
+                                        <br />
+                                        @Html.Label("Ürün Fotoğrafı 2")
+                                        <input type="file" name="Image2" />
+
+                                        <br />
+                                        <div class="form-group">
+                                            <label for="CategoryId" class="form-label">Ürün Kategori</label>
+                                            @Html.DropDownListFor(model => model.CategoryId, (IEnumerable<SelectListItem>)ViewBag.categoryValues, "Lütfen bir kategori seçin", new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.CategoryId, "", new { @class = "text-danger" })
+                                        </div>
+                                        <br />
+                                        @Html.Label("Ürün Açıklaması")
+                                        @Html.TextAreaFor(x=>x.ProductDescription,3,3, new{@class="form-control"})
+                                        @Html.ValidationMessageFor(x=>x.ProductDescription)
+                                        <br />
+
+                                        <button class="btn btn-primary btn-sm float-right"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ekle </button>
+                                    </table>
+
+
+                                </form>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="panel-body">
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-stripped">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    FOTOĞRAF
+                                                </th>
+                                                <th>
+                                                    FOTOĞRAF URL
+                                                </th>
+                                                <th>
+                                                    SİL
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img style="width:80px; height:80px;" src="">
+
+                                                <td>
+                                                    <input type="text" class="form-control" value="">
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="/AdminTema/js/jquery-3.1.1.min.js"></script>
+    <script src="/AdminTema/js/popper.min.js"></script>
+    <script src="/AdminTema/js/bootstrap.js"></script>
+    <script src="/AdminTema/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/AdminTema/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="/AdminTema/js/inspinia.js"></script>
+    <script src="/AdminTema/js/plugins/pace/pace.min.js"></script>
+
+    <!-- SUMMERNOTE -->
+    <script src="/AdminTema/js/plugins/summernote/summernote-bs4.js"></script>
+
+    <!-- Data picker -->
+    <script src="/AdminTema/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $('.summernote').summernote();
+
+            $('.input-group.date').datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true
+            });
+
+        });
+    </script>
+</body>
+</html>
+

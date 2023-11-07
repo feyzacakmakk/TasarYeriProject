@@ -1,0 +1,104 @@
+﻿@using TasarYeriProject.EntityLayer.Concrete
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common
+@model IPagedList<AppUser>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-9">
+                    <h2>Kullanıcılar</h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <strong>Kullanıcılar</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-lg-3">
+                            <div class="contact-box center-version">
+
+                                <a href="profile.html">
+
+                                    <img alt="image" class="rounded-circle" src="@item.ImageUrl">
+
+
+                                    <h3 class="m-b-xs"><strong>@item.Name @item.Surname</strong></h3>
+                                    <div class="font-bold">
+                                @await Component.InvokeAsync("UserInRole" , new { user_id = item.Id })
+                                    </div>
+
+                                    <address class="m-t-md">
+                                        @if (item.UserStatus ==true)
+                                        {
+                                            <strong>Durum: Aktif</strong>
+
+                                            <br>
+                                        }
+                                        else
+                                        {
+                                            <strong>Durum: Pasif</strong>
+
+                                            <br>
+                                        }
+
+                                        @item.Address
+                                        <br/>
+                                        Tel: @item.PhoneNumber
+                                    </address>
+
+                                </a>
+                                <div class="contact-box-footer">
+                                    <div class="m-t-xs btn-group">
+                                        @* <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a> *@
+                                <a href="/Admin/User/UserDetail/@item.Id/" class="btn btn-xs btn-white"><i class="fa fa-edit"></i> Detaya Git</a>
+                                        <a href="/Admin/Product/ProductList/@item.Id/" class="btn btn-xs btn-white"><i class="fa fa-cubes"></i> Ürünler</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    }
+                </div>
+            </div>
+    <br />
+    <div style=" position: fixed; left: 250px; bottom: 50px; ">
+        @* sayfalamayı sabitlemek için yazıldı *@
+        @Html.PagedListPager((IPagedList)Model,page=>Url.Action("Index", new {page}), new
+        PagedListRenderOptions{
+        LiElementClasses= new string[]{"page-item"},
+        PageClasses= new string[]{"page-link" },
+        })
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="/AdminTema/js/jquery-3.1.1.min.js"></script>
+    <script src="/AdminTema/js/popper.min.js"></script>
+    <script src="/AdminTema/js/bootstrap.js"></script>
+    <script src="/AdminTema/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/AdminTema/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="/AdminTema/js/inspinia.js"></script>
+    <script src="/AdminTema/js/plugins/pace/pace.min.js"></script>
+
+
+</body>
+
+</html>

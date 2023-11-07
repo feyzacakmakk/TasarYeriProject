@@ -1,0 +1,96 @@
+﻿@model Message
+@{
+    ViewData["Title"] = "AdminSendMessage";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-lg-12 animated fadeInRight">
+                <div class="mail-box-header">
+                    <div class="float-right tooltip-demo">
+                        <a href="/Admin/Message/AdminInbox/" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> Vazgeç</a>
+                    </div>
+                    <h2>
+                        Mesaj Oluştur
+                    </h2>
+                </div>
+                <div class="mail-box">
+
+
+                    <div class="mail-body">
+                        <form class="form-group" asp-action="AdminReplyMessage" asp-controller="Message" method="post">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Kimden:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" disabled value="@ViewBag.userMail" asp-for="SenderId">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Kime:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" disabled value="@ViewBag.senderName" asp-for="ReceiverId">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Konu:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" asp-for="Subject">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Mesaj:</label>
+                                <div class="col-sm-10">
+                                    <textarea type="text" class="form-control" rows="5" asp-for="MessageDetails"></textarea>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="form-group" style="margin-left:1120px">
+                                <button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Gönder </button>
+
+                            </div>
+
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="/AdminTema/js/jquery-3.1.1.min.js"></script>
+    <script src="/AdminTema/js/popper.min.js"></script>
+    <script src="/AdminTema/js/bootstrap.js"></script>
+    <script src="/AdminTema/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/AdminTema/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="/AdminTema/js/inspinia.js"></script>
+    <script src="/AdminTema/js/plugins/pace/pace.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="/AdminTema/js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- SUMMERNOTE -->
+    <script src="/AdminTema/js/plugins/summernote/summernote-bs4.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.summernote').summernote();
+
+        });
+
+    </script>
+</body>
+
+</html>
+
