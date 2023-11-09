@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TASAR YERİ | Satıcı Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Favicon -->
+	<link href="img/logosvg.png" rel="shortcut icon"/>
+    
+    <!-- Morris -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded-circle" src="img/profile_small.jpg"/>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">Feyza Çakmak</span>
+                                <span class="text-muted text-xs block">Bilgisayar Mühendisi <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="profile_2.html">Profil</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">İletişim</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mail Kutusu </a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Çıkış Yap</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            <img alt="image" class="rounded-circle" src="img/profile_small.jpg"/>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> 
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="profile_2.html"><i class="fa fa-user"></i> <span class="nav-label">Profil</span> 
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="contacts.html"><i class="fa fa-users"></i> <span class="nav-label">Müşteriler</span> 
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="clients.html"><i class="fa fa-address-book"></i> <span class="nav-label">İletişim</span> 
+                        </a>
+                        
+                    </li>
+        
+                    <li>
+                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">E-posta </span><span class="label label-warning float-right">16/24</span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="mailbox.html">Inbox</a></li>
+                            <li><a href="mail_detail.html">Email Detay</a></li>
+                            <li><a href="mail_compose.html">Email Gönder</a></li>
+                            <li><a href="full_height.html">Email</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-tags"></i> <span class="nav-label">Ürün Takip</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="ecommerce_products_grid.html">Ürünler</a></li>
+                            <li><a href="ecommerce_product_list.html">Ürünler Listesi</a></li>
+                            <li><a href="ecommerce_product.html">Ürün Düzenleme</a></li>
+                            <li><a href="ecommerce_product_detail.html">Ürün Detayları</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">Sipariş Takip</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="activity_stream.html">Sipariş Çizelgesi</a></li>
+                            <li><a href="ecommerce-orders.html">Siparişler</a></li>
+                            <li><a href="vote_list.html">Sipariş Listesi</a></li>
+                            <li><a href="issue_tracker.html">Sipariş Listesi</a></li>
+                            <li><a href="ecommerce-cart.html">Sepet</a></li>
+                            <li><a href="ecommerce_payments.html">Ödeme</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="calendar.html"><i class="fa fa-calendar"></i> <span class="nav-label">Takvim</span> 
+                        </a>
+                        
+                    </li>
+                </ul>
+    
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Arama Yap..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">Hoş geldin Feyza</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a class="dropdown-item float-left" href="profile.html">
+                                    <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                                </a>
+                                <div>
+                                    <small class="float-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a class="dropdown-item float-left" href="profile.html">
+                                    <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                                </a>
+                                <div>
+                                    <small class="float-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a class="dropdown-item float-left" href="profile.html">
+                                    <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                                </a>
+                                <div>
+                                    <small class="float-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html" class="dropdown-item">
+                                    <i class="fa fa-envelope"></i> <strong>Tüm mesajlar</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html" class="dropdown-item">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="float-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a href="profile.html" class="dropdown-item">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="float-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a href="grid_options.html" class="dropdown-item">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="float-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html" class="dropdown-item">
+                                    <strong>Tüm Bildirimleri Gör</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Çıkış Yap
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+
+        
+
+        <div class="wrapper wrapper-content">
+            <div class="row mt-5">
+                <div class="col-lg-3">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <span class="label label-success float-right">Aylık</span>
+                            <h5>Gelir</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <h1 class="no-margins">886,200</h1>
+                            <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>
+                            <small>Toplam Gelir</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <span class="label label-info float-right">Yıllık</span>
+                            <h5>Siparişler</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <h1 class="no-margins">275,800</h1>
+                            <div class="stat-percent font-bold text-info">20% <i class="fa fa-level-up"></i></div>
+                            <small>Yeni Siparişler</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <span class="label label-primary float-right">Bugün</span>
+                            <h5>Ziyaretçiler</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <h1 class="no-margins">106,120</h1>
+                            <div class="stat-percent font-bold text-navy">44% <i class="fa fa-level-up"></i></div>
+                            <small>Yeni Ziyaretçiler</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <span class="label label-danger float-right">Düşük Değer</span>
+                            <h5>Aktif Kullanıcı</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <h1 class="no-margins">80,600</h1>
+                            <div class="stat-percent font-bold text-danger">38% <i class="fa fa-level-down"></i></div>
+                            <small>İlk Ayda</small>
+                        </div>
+                    </div>
+        </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Sipariş Çizelgesi</h5>
+                            <div class="float-right">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-xs btn-white active">Bugün</button>
+                                    <button type="button" class="btn btn-xs btn-white">Aylık</button>
+                                    <button type="button" class="btn btn-xs btn-white">Yıllık</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="row">
+                            <div class="col-lg-9">
+                                <div class="flot-chart">
+                                    <div class="flot-chart-content" id="flot-dashboard-chart"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <ul class="stat-list">
+                                    <li>
+                                        <h2 class="no-margins">2,346</h2>
+                                        <small>Toplam Sipariş</small>
+                                        <div class="stat-percent">48% <i class="fa fa-level-up text-navy"></i></div>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 48%;" class="progress-bar"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h2 class="no-margins ">4,422</h2>
+                                        <small>Son Aydaki Siparişler</small>
+                                        <div class="stat-percent">60% <i class="fa fa-level-down text-navy"></i></div>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 60%;" class="progress-bar"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h2 class="no-margins ">9,180</h2>
+                                        <small>Siparişlerden Aylık Gelir</small>
+                                        <div class="stat-percent">22% <i class="fa fa-bolt text-navy"></i></div>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 22%;" class="progress-bar"></div>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        
+
+        
+        <div class="row">
+
+        <div class="col-lg-12">
+        <div class="ibox ">
+        <div class="ibox-title">
+            <h5>Son 5 Müşteri </h5>
+            <div class="ibox-tools">
+                <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-wrench"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#" class="dropdown-item">Config option 1</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Config option 2</a>
+                    </li>
+                </ul>
+                <a class="close-link">
+                    <i class="fa fa-times"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="ibox-content">
+            <div class="row">
+                <div class="col-sm-9 m-b-xs">
+                    <div data-toggle="buttons" class="btn-group btn-group-toggle">
+                        <label class="btn btn-sm btn-white"> <input type="radio" id="option1" name="options"> Gün </label>
+                        <label class="btn btn-sm btn-white active"> <input type="radio" id="option2" name="options"> Hafta </label>
+                        <label class="btn btn-sm btn-white"> <input type="radio" id="option3" name="options"> Ay </label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-primary" type="button">Go!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Adı </th>
+                        <th>Soyadı </th>
+                        <th>Telefon </th>
+                        <th>Aldığı Ürün </th>
+                        <th>Fiyat </th>
+                        <th>Tarih</th>
+                        <th>Durum</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Project</td>
+                        <td>Patrick Smith</td>
+                        <td>0800 051213</td>
+                        <td>Inceptos Hymenaeos Ltd</td>
+                        <td>200 <i class="fa fa-try" aria-hidden="true"></i></td>
+                        <td>Jul 14, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Alpha project</td>
+                        <td>Alice Jackson</td>
+                        <td>0500 780909</td>
+                        <td>Nec Euismod In Company</td>
+                        <td>100 <i class="fa fa-try" aria-hidden="true"></i></td>
+                        <td>Jul 16, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Betha project</td>
+                        <td>John Smith</td>
+                        <td>0800 1111</td>
+                        <td>Erat Volutpat</td>
+                        <td>500 <i class="fa fa-try" aria-hidden="true"></i></td>
+                        <td>Jul 18, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Gamma project</td>
+                        <td>Anna Jordan</td>
+                        <td>(016977) 0648</td>
+                        <td>Tellus Ltd</td>
+                        <td>300 <i class="fa fa-try" aria-hidden="true"></i></td>
+                        <td>Jul 22, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Alpha project</td>
+                        <td>Alice Jackson</td>
+                        <td>0500 780909</td>
+                        <td>Nec Euismod In Company</td>
+                        <td>100 <i class="fa fa-try" aria-hidden="true"></i></td>
+                        <td>Jul 16, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr> 
+                    <!--
+                    <tr>
+                        <td>1</td>
+                        <td>Project <small>This is example of project</small></td>
+                        <td>Patrick Smith</td>
+                        <td>0800 051213</td>
+                        <td>Inceptos Hymenaeos Ltd</td>
+                        <td><span class="pie">0.52/1.561</span></td>
+                        <td>20%</td>
+                        <td>Jul 14, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Gamma project</td>
+                        <td>Anna Jordan</td>
+                        <td>(016977) 0648</td>
+                        <td>Tellus Ltd</td>
+                        <td><span class="pie">4,9</span></td>
+                        <td>18%</td>
+                        <td>Jul 22, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Project <small>This is example of project</small></td>
+                        <td>Patrick Smith</td>
+                        <td>0800 051213</td>
+                        <td>Inceptos Hymenaeos Ltd</td>
+                        <td><span class="pie">0.52/1.561</span></td>
+                        <td>20%</td>
+                        <td>Jul 14, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Alpha project</td>
+                        <td>Alice Jackson</td>
+                        <td>0500 780909</td>
+                        <td>Nec Euismod In Company</td>
+                        <td><span class="pie">6,9</span></td>
+                        <td>40%</td>
+                        <td>Jul 16, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Betha project</td>
+                        <td>John Smith</td>
+                        <td>0800 1111</td>
+                        <td>Erat Volutpat</td>
+                        <td><span class="pie">3,1</span></td>
+                        <td>75%</td>
+                        <td>Jul 18, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Gamma project</td>
+                        <td>Anna Jordan</td>
+                        <td>(016977) 0648</td>
+                        <td>Tellus Ltd</td>
+                        <td><span class="pie">4,9</span></td>
+                        <td>18%</td>
+                        <td>Jul 22, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Alpha project</td>
+                        <td>Alice Jackson</td>
+                        <td>0500 780909</td>
+                        <td>Nec Euismod In Company</td>
+                        <td><span class="pie">6,9</span></td>
+                        <td>40%</td>
+                        <td>Jul 16, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Project <small>This is example of project</small></td>
+                        <td>Patrick Smith</td>
+                        <td>0800 051213</td>
+                        <td>Inceptos Hymenaeos Ltd</td>
+                        <td><span class="pie">0.52/1.561</span></td>
+                        <td>20%</td>
+                        <td>Jul 14, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Gamma project</td>
+                        <td>Anna Jordan</td>
+                        <td>(016977) 0648</td>
+                        <td>Tellus Ltd</td>
+                        <td><span class="pie">4,9</span></td>
+                        <td>18%</td>
+                        <td>Jul 22, 2013</td>
+                        <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                    </tr> -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        </div>
+        </div>
+
+        </div>
+
+
+        </div>
+
+
+        <div class="footer">
+            <div class="float-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2018
+            </div>
+        </div>
+
+        </div>
+        
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/jquery.flot.symbol.js"></script>
+    <script src="js/plugins/flot/curvedLines.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- Jvectormap -->
+    <script src="js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+
+            var d1 = [[1262304000000, 6], [1264982400000, 3057], [1267401600000, 20434], [1270080000000, 31982], [1272672000000, 26602], [1275350400000, 27826], [1277942400000, 24302], [1280620800000, 24237], [1283299200000, 21004], [1285891200000, 12144], [1288569600000, 10577], [1291161600000, 10295]];
+            var d2 = [[1262304000000, 5], [1264982400000, 200], [1267401600000, 1605], [1270080000000, 6129], [1272672000000, 11643], [1275350400000, 19055], [1277942400000, 30062], [1280620800000, 39197], [1283299200000, 37000], [1285891200000, 27000], [1288569600000, 21000], [1291161600000, 17000]];
+
+            var data1 = [
+                { label: "Data 1", data: d1, color: '#17a084'},
+                { label: "Data 2", data: d2, color: '#127e68' }
+            ];
+            $.plot($("#flot-chart1"), data1, {
+                xaxis: {
+                    tickDecimals: 0
+                },
+                series: {
+                    lines: {
+                        show: true,
+                        fill: true,
+                        fillColor: {
+                            colors: [{
+                                opacity: 1
+                            }, {
+                                opacity: 1
+                            }]
+                        },
+                    },
+                    points: {
+                        width: 0.1,
+                        show: false
+                    },
+                },
+                grid: {
+                    show: false,
+                    borderWidth: 0
+                },
+                legend: {
+                    show: false,
+                }
+            });
+
+            var lineData = {
+                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                datasets: [
+                    {
+                        label: "Example dataset",
+                        backgroundColor: "rgba(26,179,148,0.5)",
+                        borderColor: "rgba(26,179,148,0.7)",
+                        pointBackgroundColor: "rgba(26,179,148,1)",
+                        pointBorderColor: "#fff",
+                        data: [48, 48, 60, 39, 56, 37, 30]
+                    },
+                    {
+                        label: "Example dataset",
+                        backgroundColor: "rgba(220,220,220,0.5)",
+                        borderColor: "rgba(220,220,220,1)",
+                        pointBackgroundColor: "rgba(220,220,220,1)",
+                        pointBorderColor: "#fff",
+                        data: [65, 59, 40, 51, 36, 25, 40]
+                    }
+                ]
+            };
+
+            var lineOptions = {
+                responsive: true
+            };
+
+
+            var ctx = document.getElementById("lineChart").getContext("2d");
+            new Chart(ctx, {type: 'line', data: lineData, options:lineOptions});
+
+
+            $('.chart').easyPieChart({
+                barColor: '#f8ac59',
+//                scaleColor: false,
+                scaleLength: 5,
+                lineWidth: 4,
+                size: 80
+            });
+
+            $('.chart2').easyPieChart({
+                barColor: '#1c84c6',
+//                scaleColor: false,
+                scaleLength: 5,
+                lineWidth: 4,
+                size: 80
+            });
+
+            var data2 = [
+                [gd(2012, 1, 1), 7], [gd(2012, 1, 2), 6], [gd(2012, 1, 3), 4], [gd(2012, 1, 4), 8],
+                [gd(2012, 1, 5), 9], [gd(2012, 1, 6), 7], [gd(2012, 1, 7), 5], [gd(2012, 1, 8), 4],
+                [gd(2012, 1, 9), 7], [gd(2012, 1, 10), 8], [gd(2012, 1, 11), 9], [gd(2012, 1, 12), 6],
+                [gd(2012, 1, 13), 4], [gd(2012, 1, 14), 5], [gd(2012, 1, 15), 11], [gd(2012, 1, 16), 8],
+                [gd(2012, 1, 17), 8], [gd(2012, 1, 18), 11], [gd(2012, 1, 19), 11], [gd(2012, 1, 20), 6],
+                [gd(2012, 1, 21), 6], [gd(2012, 1, 22), 8], [gd(2012, 1, 23), 11], [gd(2012, 1, 24), 13],
+                [gd(2012, 1, 25), 7], [gd(2012, 1, 26), 9], [gd(2012, 1, 27), 9], [gd(2012, 1, 28), 8],
+                [gd(2012, 1, 29), 5], [gd(2012, 1, 30), 8], [gd(2012, 1, 31), 25]
+            ];
+
+            var data3 = [
+                [gd(2012, 1, 1), 800], [gd(2012, 1, 2), 500], [gd(2012, 1, 3), 600], [gd(2012, 1, 4), 700],
+                [gd(2012, 1, 5), 500], [gd(2012, 1, 6), 456], [gd(2012, 1, 7), 800], [gd(2012, 1, 8), 589],
+                [gd(2012, 1, 9), 467], [gd(2012, 1, 10), 876], [gd(2012, 1, 11), 689], [gd(2012, 1, 12), 700],
+                [gd(2012, 1, 13), 500], [gd(2012, 1, 14), 600], [gd(2012, 1, 15), 700], [gd(2012, 1, 16), 786],
+                [gd(2012, 1, 17), 345], [gd(2012, 1, 18), 888], [gd(2012, 1, 19), 888], [gd(2012, 1, 20), 888],
+                [gd(2012, 1, 21), 987], [gd(2012, 1, 22), 444], [gd(2012, 1, 23), 999], [gd(2012, 1, 24), 567],
+                [gd(2012, 1, 25), 786], [gd(2012, 1, 26), 666], [gd(2012, 1, 27), 888], [gd(2012, 1, 28), 900],
+                [gd(2012, 1, 29), 178], [gd(2012, 1, 30), 555], [gd(2012, 1, 31), 993]
+            ];
+
+
+            var dataset = [
+                {
+                    label: "Number of orders",
+                    data: data3,
+                    color: "#1ab394",
+                    bars: {
+                        show: true,
+                        align: "center",
+                        barWidth: 24 * 60 * 60 * 600,
+                        lineWidth:0
+                    }
+
+                }, {
+                    label: "Payments",
+                    data: data2,
+                    yaxis: 2,
+                    color: "#1C84C6",
+                    lines: {
+                        lineWidth:1,
+                            show: true,
+                            fill: true,
+                        fillColor: {
+                            colors: [{
+                                opacity: 0.2
+                            }, {
+                                opacity: 0.4
+                            }]
+                        }
+                    },
+                    splines: {
+                        show: false,
+                        tension: 0.6,
+                        lineWidth: 1,
+                        fill: 0.1
+                    },
+                }
+            ];
+
+
+            var options = {
+                xaxis: {
+                    mode: "time",
+                    tickSize: [3, "day"],
+                    tickLength: 0,
+                    axisLabel: "Date",
+                    axisLabelUseCanvas: true,
+                    axisLabelFontSizePixels: 12,
+                    axisLabelFontFamily: 'Arial',
+                    axisLabelPadding: 10,
+                    color: "#d5d5d5"
+                },
+                yaxes: [{
+                    position: "left",
+                    max: 1070,
+                    color: "#d5d5d5",
+                    axisLabelUseCanvas: true,
+                    axisLabelFontSizePixels: 12,
+                    axisLabelFontFamily: 'Arial',
+                    axisLabelPadding: 3
+                }, {
+                    position: "right",
+                    clolor: "#d5d5d5",
+                    axisLabelUseCanvas: true,
+                    axisLabelFontSizePixels: 12,
+                    axisLabelFontFamily: ' Arial',
+                    axisLabelPadding: 67
+                }
+                ],
+                legend: {
+                    noColumns: 1,
+                    labelBoxBorderColor: "#000000",
+                    position: "nw"
+                },
+                grid: {
+                    hoverable: false,
+                    borderWidth: 0
+                }
+            };
+
+            function gd(year, month, day) {
+                return new Date(year, month - 1, day).getTime();
+            }
+
+            var previousPoint = null, previousLabel = null;
+
+            $.plot($("#flot-dashboard-chart"), dataset, options);
+
+            var mapData = {
+                "US": 298,
+                "SA": 200,
+                "DE": 220,
+                "FR": 540,
+                "CN": 120,
+                "AU": 760,
+                "BR": 550,
+                "IN": 200,
+                "GB": 120,
+            };
+
+            $('#world-map').vectorMap({
+                map: 'world_mill_en',
+                backgroundColor: "transparent",
+                regionStyle: {
+                    initial: {
+                        fill: '#e4e4e4',
+                        "fill-opacity": 0.9,
+                        stroke: 'none',
+                        "stroke-width": 0,
+                        "stroke-opacity": 0
+                    }
+                },
+
+                series: {
+                    regions: [{
+                        values: mapData,
+                        scale: ["#1ab394", "#22d6b1"],
+                        normalizeFunction: 'polynomial'
+                    }]
+                },
+            });
+
+        });
+   
+    //    -------
+    
+     </script>
+   
+   <script>
+    $(document).ready(function() {
+        $('.chart').easyPieChart({
+            barColor: '#f8ac59',
+//                scaleColor: false,
+            scaleLength: 5,
+            lineWidth: 4,
+            size: 80
+        });
+
+        $('.chart2').easyPieChart({
+            barColor: '#1c84c6',
+//                scaleColor: false,
+            scaleLength: 5,
+            lineWidth: 4,
+            size: 80
+        });
+
+        var data2 = [
+            [gd(2012, 1, 1), 7], [gd(2012, 1, 2), 6], [gd(2012, 1, 3), 4], [gd(2012, 1, 4), 8],
+            [gd(2012, 1, 5), 9], [gd(2012, 1, 6), 7], [gd(2012, 1, 7), 5], [gd(2012, 1, 8), 4],
+            [gd(2012, 1, 9), 7], [gd(2012, 1, 10), 8], [gd(2012, 1, 11), 9], [gd(2012, 1, 12), 6],
+            [gd(2012, 1, 13), 4], [gd(2012, 1, 14), 5], [gd(2012, 1, 15), 11], [gd(2012, 1, 16), 8],
+            [gd(2012, 1, 17), 8], [gd(2012, 1, 18), 11], [gd(2012, 1, 19), 11], [gd(2012, 1, 20), 6],
+            [gd(2012, 1, 21), 6], [gd(2012, 1, 22), 8], [gd(2012, 1, 23), 11], [gd(2012, 1, 24), 13],
+            [gd(2012, 1, 25), 7], [gd(2012, 1, 26), 9], [gd(2012, 1, 27), 9], [gd(2012, 1, 28), 8],
+            [gd(2012, 1, 29), 5], [gd(2012, 1, 30), 8], [gd(2012, 1, 31), 25]
+        ];
+
+        var data3 = [
+            [gd(2012, 1, 1), 800], [gd(2012, 1, 2), 500], [gd(2012, 1, 3), 600], [gd(2012, 1, 4), 700],
+            [gd(2012, 1, 5), 500], [gd(2012, 1, 6), 456], [gd(2012, 1, 7), 800], [gd(2012, 1, 8), 589],
+            [gd(2012, 1, 9), 467], [gd(2012, 1, 10), 876], [gd(2012, 1, 11), 689], [gd(2012, 1, 12), 700],
+            [gd(2012, 1, 13), 500], [gd(2012, 1, 14), 600], [gd(2012, 1, 15), 700], [gd(2012, 1, 16), 786],
+            [gd(2012, 1, 17), 345], [gd(2012, 1, 18), 888], [gd(2012, 1, 19), 888], [gd(2012, 1, 20), 888],
+            [gd(2012, 1, 21), 987], [gd(2012, 1, 22), 444], [gd(2012, 1, 23), 999], [gd(2012, 1, 24), 567],
+            [gd(2012, 1, 25), 786], [gd(2012, 1, 26), 666], [gd(2012, 1, 27), 888], [gd(2012, 1, 28), 900],
+            [gd(2012, 1, 29), 178], [gd(2012, 1, 30), 555], [gd(2012, 1, 31), 993]
+        ];
+
+
+        var dataset = [
+            {
+                label: "Number of orders",
+                data: data3,
+                color: "#1ab394",
+                bars: {
+                    show: true,
+                    align: "center",
+                    barWidth: 24 * 60 * 60 * 600,
+                    lineWidth:0
+                }
+
+            }, {
+                label: "Payments",
+                data: data2,
+                yaxis: 2,
+                color: "#1C84C6",
+                lines: {
+                    lineWidth:1,
+                        show: true,
+                        fill: true,
+                    fillColor: {
+                        colors: [{
+                            opacity: 0.2
+                        }, {
+                            opacity: 0.4
+                        }]
+                    }
+                },
+                splines: {
+                    show: false,
+                    tension: 0.6,
+                    lineWidth: 1,
+                    fill: 0.1
+                },
+            }
+        ];
+
+
+        var options = {
+            xaxis: {
+                mode: "time",
+                tickSize: [3, "day"],
+                tickLength: 0,
+                axisLabel: "Date",
+                axisLabelUseCanvas: true,
+                axisLabelFontSizePixels: 12,
+                axisLabelFontFamily: 'Arial',
+                axisLabelPadding: 10,
+                color: "#d5d5d5"
+            },
+            yaxes: [{
+                position: "left",
+                max: 1070,
+                color: "#d5d5d5",
+                axisLabelUseCanvas: true,
+                axisLabelFontSizePixels: 12,
+                axisLabelFontFamily: 'Arial',
+                axisLabelPadding: 3
+            }, {
+                position: "right",
+                clolor: "#d5d5d5",
+                axisLabelUseCanvas: true,
+                axisLabelFontSizePixels: 12,
+                axisLabelFontFamily: ' Arial',
+                axisLabelPadding: 67
+            }
+            ],
+            legend: {
+                noColumns: 1,
+                labelBoxBorderColor: "#000000",
+                position: "nw"
+            },
+            grid: {
+                hoverable: false,
+                borderWidth: 0
+            }
+        };
+
+        function gd(year, month, day) {
+            return new Date(year, month - 1, day).getTime();
+        }
+
+        var previousPoint = null, previousLabel = null;
+
+        $.plot($("#flot-dashboard-chart"), dataset, options);
+
+        var mapData = {
+            "US": 298,
+            "SA": 200,
+            "DE": 220,
+            "FR": 540,
+            "CN": 120,
+            "AU": 760,
+            "BR": 550,
+            "IN": 200,
+            "GB": 120,
+        };
+
+        $('#world-map').vectorMap({
+            map: 'world_mill_en',
+            backgroundColor: "transparent",
+            regionStyle: {
+                initial: {
+                    fill: '#e4e4e4',
+                    "fill-opacity": 0.9,
+                    stroke: 'none',
+                    "stroke-width": 0,
+                    "stroke-opacity": 0
+                }
+            },
+
+            series: {
+                regions: [{
+                    values: mapData,
+                    scale: ["#1ab394", "#22d6b1"],
+                    normalizeFunction: 'polynomial'
+                }]
+            },
+        });
+    });
+    </script>
+</body>
+</html>
