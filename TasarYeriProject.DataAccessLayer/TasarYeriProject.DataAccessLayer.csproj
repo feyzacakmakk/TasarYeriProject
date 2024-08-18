@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.deps.json" />
+    <Content Include="bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.runtimeconfig.json" />
+    <Content Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\TasarYeriProject.DataAccessLayer.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.1.39" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TasarYeriProject.EntityLayer\TasarYeriProject.EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.dll" />
+    <None Include="bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.pdb" />
+    <None Include="bin\Debug\net6.0\TasarYeriProject.EntityLayer.dll" />
+    <None Include="bin\Debug\net6.0\TasarYeriProject.EntityLayer.pdb" />
+    <None Include="obj\Debug\net6.0\refint\TasarYeriProject.DataAccessLayer.dll" />
+    <None Include="obj\Debug\net6.0\ref\TasarYeriProject.DataAccessLayer.dll" />
+    <None Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.assets.cache" />
+    <None Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.CopyComplete" />
+    <None Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.dll" />
+    <None Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.pdb" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\TasarYeriProject.DataAccessLayer.csproj.nuget.g.props" />
+    <None Include="obj\TasarYeriProject.DataAccessLayer.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+</Project>

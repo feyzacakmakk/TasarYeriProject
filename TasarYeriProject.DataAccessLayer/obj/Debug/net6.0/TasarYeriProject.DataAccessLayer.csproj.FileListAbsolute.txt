@@ -1,0 +1,51 @@
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.deps.json
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.runtimeconfig.json
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.pdb
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.EntityLayer.dll
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.EntityLayer.pdb
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.AssemblyInfo.cs
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.CopyComplete
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\refint\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.pdb
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.genruntimeconfig.cache
+C:\Users\Feyza\Desktop\C# .NET CORE\TASAR YERI\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\ref\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.deps.json
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.runtimeconfig.json
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.pdb
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.EntityLayer.dll
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.EntityLayer.pdb
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.AssemblyInfo.cs
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.CopyComplete
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\refint\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.pdb
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.genruntimeconfig.cache
+C:\Users\Feyza\Desktop\TASAR YERI - Kopya\TasarYeriProject\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\ref\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.deps.json
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.runtimeconfig.json
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.DataAccessLayer.pdb
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.EntityLayer.dll
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\bin\Debug\net6.0\TasarYeriProject.EntityLayer.pdb
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.AssemblyInfo.cs
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.csproj.CopyComplete
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\refint\TasarYeriProject.DataAccessLayer.dll
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.pdb
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\TasarYeriProject.DataAccessLayer.genruntimeconfig.cache
+C:\Users\Feyza\Desktop\TasarYeriProject-main\TasarYeriProject.DataAccessLayer\obj\Debug\net6.0\ref\TasarYeriProject.DataAccessLayer.dll
